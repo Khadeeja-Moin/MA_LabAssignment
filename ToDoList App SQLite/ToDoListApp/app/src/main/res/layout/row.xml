@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:text="Example"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="20sp"
+        android:text="Date"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+        -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Radgrp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Status"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_comp"
+            android:text="Completed"
+            android:layout_marginLeft="15dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stat_incomp"
+            android:text="Incomplete"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="-50dp"
+            />
+    </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
+        android:text="SAVE CHNAGES"
+        android:onClick="saveStatus"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:text="DELETE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="deleteTask"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="15dp"
+        />
+
+</RelativeLayout>
